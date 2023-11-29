@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 94%);
+}
+.main-cal {
+  width: 650px;
+  height: 500px;
+  padding: 30px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px 10px 35% 10px;
+}
+.bar {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  letter-spacing: 3px;
+  color: hsl(0, 1%, 44%);
+  font-size: 12px;
+  font-weight: 800;
+}
+#calculator{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+#input_1 {
+  border-radius: 5px;
+  padding: 10px;
+  width:135px;
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+  border:1px solid  hsl(0, 0%, 94%);
+  outline: none;
+}
+#input_1:focus{
+  border:  1px solid  hsl(259, 100%, 65%);;
+}
+#input_2 {
+  border:1px solid  hsl(0, 0%, 94%);
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  width:135px;
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+}
+#input_2:focus{
+  border:  1px solid  hsl(259, 100%, 65%);;
+}
+#input_3 {
+  border:1px solid  hsl(0, 0%, 94%);
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  width:135px;
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+}
+#input_3:focus{
+  border:  1px solid  hsl(259, 100%, 65%);;
+}
+small{
+  color: hsl(0, 100%, 67%);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 0.6rem;
+}
+#line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+#line button{
+  background: hsl(259, 100%, 65%);
+  border-radius: 60px;
+  border: 0px hsl(259, 100%, 65%);
+  padding: 15px;
+  position: absolute;
+  top: 39%;
+  cursor: pointer;
+}
+#line button:hover{
+  background-color: hsl(259, 73%, 44%);
+}
+.output span{
+  color: hsl(259, 89%, 57%);
+  font-style: italic;
+  font-weight: 700;
+padding: 10px;
+}
+ .output h1 {
+  font-size: 65px;
+  font-weight: 800;
+}
+
+@media (max-width : 768px) {
+body{
+  width: 500px;
+  padding: 0;
+  }
+
+  .output h1 {
+    font-size: 1.75rem;
+    padding: 20px;
+  }
+.submit_btn{
+position: absolute;
+right: 40%;
+top: 40px;
+  }
+  .submit_btn img{
+    transform: scale(0.5);
+  }
+}
