@@ -8,6 +8,18 @@
   box-sizing: border-box;
   font-family: "Poppins";
 }
+/*chrome*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
 html,
 body {
   min-height: 100vh;
@@ -113,23 +125,24 @@ padding: 10px;
   font-size: 65px;
   font-weight: 800;
 }
-
-@media (max-width : 768px) {
-body{
-  width: 500px;
-  padding: 0;
+@media (max-width: 768px) {
+  body {
+    width: 300px;
   }
-
+  .main-cal {
+    width: 375px;
+  }
+  .bar {
+    width: 110px;
+    height: 100px;
+    padding: 0;
+  }
   .output h1 {
     font-size: 1.75rem;
     padding: 20px;
   }
-.submit_btn{
-position: absolute;
-right: 40%;
-top: 40px;
-  }
-  .submit_btn img{
+
+  .submit_btn img {
     transform: scale(0.5);
   }
 }
