@@ -2,6 +2,9 @@
 const output_year = document.querySelector(".output-year");
 const  output_month = document.querySelector(".output-month");
 const output_day = document.querySelector(".output-day ");
+const output_hour = document.querySelector(".output-hour");
+const output_minutes = document.querySelector(".output-minutes");
+const output_seconds = document.querySelector(".output-seconds");
 const submit_btn = document.querySelector(".submit_btn");
 
 //input variables.
@@ -90,10 +93,16 @@ function AgeCalculator(){
         let ageYears = ageDate.getUTCFullYear() - 1970;
         let ageMonths = ageDate.getUTCMonth();
         let ageDays = ageDate.getUTCDay();
+        let ageHours = ageDate.getHours();
+        let ageMinutes = ageDate.getMinutes();
+        let ageSeconds = ageDate.getSeconds();
         //Final Output of Your Current Age,
         output_day.textContent = ageDays;
         output_month.textContent = ageMonths;
         output_year.textContent  = ageYears;
+         output_hour.textContent = ageHours;
+        output_minutes.textContent = ageMinutes;
+        output_seconds.textContent = ageSeconds;
     }
     else{
         alert('ERROR!!');
