@@ -20,6 +20,7 @@ input::-webkit-inner-spin-button {
 /* input[type=number] {
   -moz-appearance: textfield;
 } */
+
 html,
 body {
   min-height: 100vh;
@@ -30,8 +31,8 @@ body {
 }
 .main-cal {
   width: 650px;
-  height: 500px;
-  padding: 30px;
+  height: 765px;
+  padding: 20px;
   background: hsl(0, 0%, 100%);
   border-radius: 10px 10px 35% 10px;
 }
@@ -44,56 +45,55 @@ body {
   font-size: 12px;
   font-weight: 800;
 }
-#calculator{
+#calculator {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 #input_1 {
   border-radius: 5px;
   padding: 10px;
-  width:135px;
+  width: 135px;
   color: #000;
   font-size: 30px;
   font-weight: 800;
-  border:1px solid  hsl(0, 0%, 94%);
+  border: 1px solid hsl(0, 0%, 94%);
   outline: none;
 }
-#input_1:focus{
-  border:  1px solid  hsl(259, 100%, 65%);;
+#input_1:focus {
+  border: 1px solid hsl(259, 100%, 65%);
 }
 #input_2 {
-  border:1px solid  hsl(0, 0%, 94%);
+  border: 1px solid hsl(0, 0%, 94%);
   outline: none;
   border-radius: 5px;
   padding: 10px;
-  width:135px;
+  width: 135px;
   color: #000;
   font-size: 30px;
   font-weight: 800;
 }
-#input_2:focus{
-  border:  1px solid  hsl(259, 100%, 65%);;
+#input_2:focus {
+  border: 1px solid hsl(259, 100%, 65%);
 }
 #input_3 {
-  border:1px solid  hsl(0, 0%, 94%);
+  border: 1px solid hsl(0, 0%, 94%);
   outline: none;
   border-radius: 5px;
   padding: 10px;
-  width:135px;
+  width: 135px;
   color: #000;
   font-size: 30px;
   font-weight: 800;
 }
-#input_3:focus{
-  border:  1px solid  hsl(259, 100%, 65%);;
+#input_3:focus {
+  border: 1px solid hsl(259, 100%, 65%);
 }
-small{
+small {
   color: hsl(0, 100%, 67%);
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 0.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 0.6rem;
 }
 #line {
   display: flex;
@@ -103,46 +103,59 @@ small{
   width: 100%;
   border-bottom: 1px solid hsl(0, 0%, 86%);
 }
-#line button{
+#line button {
   background: hsl(259, 100%, 65%);
   border-radius: 60px;
   border: 0px hsl(259, 100%, 65%);
   padding: 15px;
   position: absolute;
-  top: 39%;
+  top: 23%;
   cursor: pointer;
 }
-#line button:hover{
+#line button:hover {
   background-color: hsl(259, 73%, 44%);
 }
-.output span{
+.output span {
   color: hsl(259, 89%, 57%);
   font-style: italic;
   font-weight: 700;
-padding: 10px;
+  padding: 10px;
 }
- .output h1 {
+.output h1 {
   font-size: 65px;
   font-weight: 800;
 }
 @media (max-width: 768px) {
-  body {
-    width: 300px;
-  }
   .main-cal {
-    width: 375px;
+    width: 325px;
+    height: 800px;
+    padding: 20px;
   }
   .bar {
     width: 110px;
-    height: 100px;
     padding: 0;
   }
   .output h1 {
     font-size: 1.75rem;
     padding: 20px;
   }
-
   .submit_btn img {
     transform: scale(0.5);
+  }
+  #input_1{
+    padding: 10px;
+    width: 90px;
+  }
+  #input_2 {
+    padding: 10px;
+    width: 90px;
+  }
+  #input_3 {
+    padding: 10px;
+    width: 97px;
+  }
+  #line button {
+    position: absolute;
+    top: 18%;
   }
 }
